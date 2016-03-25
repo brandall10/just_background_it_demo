@@ -27,6 +27,8 @@ gem 'puma'
 
 gem 'message_bus'
 
+gem 'sucker_punch', '~> 1.0'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
