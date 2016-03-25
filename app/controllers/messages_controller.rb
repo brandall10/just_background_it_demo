@@ -1,6 +1,6 @@
 class MessagesController < ApplicationController
   def do_work
-    MessageBus.publish "/channel", "hello"
+    QueueMessageService.execute_in_background(params[:message])
     head :ok
   end
 end

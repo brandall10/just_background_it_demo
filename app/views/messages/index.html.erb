@@ -1,2 +1,6 @@
-<%= button_to "Send message", do_work_path, remote: true %>
+<%= form_tag(do_work_path, remote: true) do %>
+  <%= text_field_tag 'message' %>
+  <hr>
+  <%= submit_tag "Submit", class: "form_submit" %>
+<% end %>
 <div id="messages"></div>
